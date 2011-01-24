@@ -1,80 +1,103 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="ru-RU">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta charset="utf-8">
+	<title>jQuery Nice Hover by Artem Sapegin</title>
+	<link href="http://sapegin.ru/api/github/pages.css" rel="stylesheet" >
 
-	<title>sapegin/jquery-nicehover @ GitHub</title>
-	
-	<style type="text/css">
-		body {
-  		margin-top: 1.0em;
-  		background-color: #cad5eb;
-		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-		h1 { font-size: 3.8em; color: #352a14; margin-bottom: 3px; }
-		h1 .small { font-size: 0.4em; }
-		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #352a14; }
-    h3 { text-align: center; color: #352a14; }
-    a { color: #352a14; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-	</style>
-	
+	<script src="http://yandex.st/highlightjs/5.16/highlight.min.js"></script>
+	<link href="http://sapegin.ru/api/highlightjs/zenburn.css" rel="stylesheet">
+	<script> 
+	hljs.tabReplace = '    ';
+	hljs.initHighlightingOnLoad();
+	</script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script src="https://github.com/sapegin/jquery-nicehover/raw/master/jquery.nicehover.js"></script>
+<style>
+.wrapper {
+	text-align: center;
+	}
+.wrapper img {
+	display: inline-block;
+	margin: 10px;
+	}
+.wrapper img.hover {
+	outline: 3px solid #cf6c0a;
+	}
+</style>
 </head>
-
 <body>
-  <a href="http://github.com/sapegin/jquery-nicehover"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
-  <div id="container">
 
-    <div class="download">
-      <a href="http://github.com/sapegin/jquery-nicehover/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/sapegin/jquery-nicehover/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
+<a href="http://github.com/sapegin/jquery-nicehover" class="forkme"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
-    <h1><a href="http://github.com/sapegin/jquery-nicehover">jquery-nicehover</a>
-      <span class="small">by <a href="http://github.com/sapegin">sapegin</a></span></h1>
+<div id="container">
 
-    <div class="description">
-      jQuery delayed hover event
-    </div>
+	<div class="download">
+		<a href="http://github.com/sapegin/jquery-nicehover/zipball/master"><img width="90" src="http://github.com/images/modules/download/zip.png"></a>
+		<a href="http://github.com/sapegin/jquery-nicehover/tarball/master"><img width="90" src="http://github.com/images/modules/download/tar.png"></a>
+	</div>
 
-    <p>Test page</p><h2>Authors</h2>
-<p>Artem Sapegin (artem@sapegin.ru)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Artem Sapegin (artem@sapegin.ru)<br/>      </p>
+    <h1>jQuery Nice Hover</h1>
+    <div class="subtitle">jQuery delayed hover event</div>
+	
+	<div class="description">
+		<p>Adds <code>nicehover</code> event to jQuery. It’s similar to hover but fires only if mouse stopped for a while on target element.</p>
+		<p>Based on jquery.event.hover.js by <a href="http://threedubmedia.com/">Three Dub Media</a>.</p>
+	</div>
+
+	
+    <h2>Demo</h2>
+	
+<h3>Standard Hover</h3>
+<div class="wrapper" id="demo1">
+<img src="https://si0.twimg.com/profile_images/373263968/DSC08216_normal.jpg">
+<img src="https://si2.twimg.com/profile_images/1182122600/xdcv_normal.jpg">
+<img src="https://si0.twimg.com/profile_images/1162536912/4290058701_baa1d7e5e6_o_normal.jpg">
+<img src="https://si0.twimg.com/profile_images/345662608/Picture_3_normal.png">
+<img src="https://si1.twimg.com/profile_images/1142936236/___100_normal.jpg">
+<img src="https://si0.twimg.com/profile_images/1123501264/z3_s190_normal.JPG">
+<img src="https://si2.twimg.com/profile_images/281595037/PICT0531-Edit_normal.jpg">
+<img src="https://si0.twimg.com/profile_images/1181383444/1_normal.jpg">
+<img src="https://si0.twimg.com/profile_images/366052760/uspicc_normal.jpg">
+<img src="https://si1.twimg.com/profile_images/594726392/824130521_5_1A27_normal.jpg">
+</div>
+
+<h3><del>Awesome</del> Nice Hover</h3>
+<div class="wrapper" id="demo2">
+<img src="https://si0.twimg.com/profile_images/373263968/DSC08216_normal.jpg">
+<img src="https://si2.twimg.com/profile_images/1182122600/xdcv_normal.jpg">
+<img src="https://si0.twimg.com/profile_images/1162536912/4290058701_baa1d7e5e6_o_normal.jpg">
+<img src="https://si0.twimg.com/profile_images/345662608/Picture_3_normal.png">
+<img src="https://si1.twimg.com/profile_images/1142936236/___100_normal.jpg">
+<img src="https://si0.twimg.com/profile_images/1123501264/z3_s190_normal.JPG">
+<img src="https://si2.twimg.com/profile_images/281595037/PICT0531-Edit_normal.jpg">
+<img src="https://si0.twimg.com/profile_images/1181383444/1_normal.jpg">
+<img src="https://si0.twimg.com/profile_images/366052760/uspicc_normal.jpg">
+<img src="https://si1.twimg.com/profile_images/594726392/824130521_5_1A27_normal.jpg">
+</div>
+
+<script>
+$('#demo1').delegate('img', 'hover', function(e){ $(this).toggleClass('hover'); });
+$('#demo2').delegate('img', 'nicehover', function(e){ $(this).toggleClass('hover'); });
+</script>
+	
+	
+	<h2>Usage</h2>
+
+<pre><code>$('.wrapper img').bind('nicehover', function(e){ $(this).toggleClass('hover'); });
+$('.wrapper').delegate('img', 'nicehover', function(e){ $(this).toggleClass('hover'); });</code></pre>
 
 
     <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/sapegin/jquery-nicehover/zipball/master">zip</a> or
-      <a href="http://github.com/sapegin/jquery-nicehover/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/sapegin/jquery-nicehover</pre>
-    </p>
+    <p>You can download this project in either <a href="http://github.com/sapegin/jquery-nicehover/zipball/master">zip</a> or <a href="http://github.com/sapegin/jquery-nicehover/tarball/master">tar</a> formats.</p>
+    <p>You can also clone the project with <a href="http://git-scm.com">Git</a> by running:</p>
+	<pre><code class="bash">$ git clone git://github.com/sapegin/jquery-nicehover</code></pre>
+    
+    <div class="footer">© <a href="http://sapegin.ru/">Artem Sapegin</a>. Get the source code on GitHub: <a href="http://github.com/sapegin/jquery-nicehover">sapegin/jquery-nicehover</a></div>
 
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/sapegin/jquery-nicehover">sapegin/jquery-nicehover</a>
-    </div>
+</div>
 
-  </div>
-
-  
 </body>
 </html>
