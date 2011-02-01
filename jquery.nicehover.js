@@ -1,25 +1,21 @@
 /**
-@title: Nice Hover
-@version: 0.0.1
-@author: Artem Sapegin
-@author: Three Dub Media
-@date: 2011-01-21
-@license: http://www.opensource.org/licenses/mit-license.php
-@copyright: 2011 Artem Sapegin (sapegin.ru)
-@copyright: 2008 Three Dub Media (http://threedubmedia.com)
-
-@does:
-Based on jquery.event.hover.js by Three Dub Media (http://threedubmedia.com)
-
-@howto:
-
-@customization:
-Defines the delay (msec) while mouse is inside the element before checking the speed:
-$.event.special.hover.delay = 10; 
-Defines the maximum speed (px/sec) the mouse may be moving to trigger the hover event:
-$.event.special.hover.speed = 100; 
-
-*/
+ * jQuery Nice Hover
+ *
+ * Adds nicehover event to jQuery. It’s similar to hover but fires only if mouse has stopped for a while on a target
+ * element. It can be useful to prevent “effect of Christmas tree” on pages with a lot of hoverable elements.
+ *
+ * Based on jquery.event.hover.js by Three Dub Media (http://threedubmedia.com)
+ *
+ * Demos and documentation: http://sapegin.github.com/jquery-nicehover/
+ *
+ * @version 0.0.2
+ * @requires jQuery 1.4.2
+ * @author Artem Sapegin
+ * @author Three Dub Media
+ * @copyright 2011 Artem Sapegin (sapegin.ru)
+ * @copyright 2008 Three Dub Media (http://threedubmedia.com)
+ * @license http://www.opensource.org/licenses/mit-license.php
+ */
 
 (function($){
 
